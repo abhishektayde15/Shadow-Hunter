@@ -1,0 +1,51 @@
+:root {
+  --tactical-dark: #080c14;
+  --tactical-panel: rgba(11, 16, 24, 0.94);
+  --tactical-card: rgba(16, 24, 36, 0.88);
+  --tactical-green: #00ff88;
+  --tactical-cyan: #00f3ff;
+  --tactical-amber: #ffaa00;
+  --tactical-crimson: #ff3344;
+  --text-primary: #edf2f7;
+  --text-muted: #8292a2;
+  --border-tactical: rgba(0, 255, 136, 0.35);
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --font-display: 'Orbitron', 'Chakra Petch', sans-serif;
+  --font-tactical: 'Chakra Petch', 'Rajdhani', sans-serif;
+  --font-body: 'Rajdhani', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--tactical-dark);
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  touch-action: none;
+}
+
+/* Custom Tactical Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(8, 12, 20, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--tactical-green);
+  border-radius: 3px;
+  box-shadow: 0 0 6px var(--tactical-green);
+}
